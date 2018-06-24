@@ -20,5 +20,6 @@ let passengerId = 0
     constuctor(driver, passenger) {
       this.driverId = driver.id
       this.passengerId = passenger.id
+      store.trips.push(this)
     }
   }
