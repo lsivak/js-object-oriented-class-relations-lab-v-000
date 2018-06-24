@@ -12,11 +12,12 @@ class Driver {
   trips () {
     return store.trips.filter(trip => {
       return trip.driverId === this.id
+      return driver
     })
   }
   passengers () {
     return this.trips().map(trip => {
-      return trip.passenger
+      return trip.passenger()
     })
   }
 }
