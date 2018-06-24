@@ -7,6 +7,7 @@ class Driver {
     store.drivers.push(this)
   }
   trips () {
+    debugger
     return store.trips.filter(trip => {
       return trip.driverId == this.id
       debugger
