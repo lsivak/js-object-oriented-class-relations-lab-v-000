@@ -42,6 +42,7 @@ let passengerId = 0
     constuctor(driver, passenger) {
       this.driverId = driver.id
       this.passengerId = passenger.id
+      debugger
       this.id = tripId++
       debugger
       store.trips.push(this)
