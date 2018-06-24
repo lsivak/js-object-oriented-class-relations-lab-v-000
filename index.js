@@ -40,6 +40,7 @@ let passengerId = 0
   let tripId = 0
   class Trip {
     constuctor(driver, passenger) {
+      debugger
       this.driverId = driver.id
       this.passengerId = passenger.id
       debugger
