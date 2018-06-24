@@ -46,6 +46,8 @@ let passengerId = 0
       store.trips.push(this)
     }
     driver () {
-      return this.trip.driver
+      return store.drivers.find(driver => {
+        return driver.id === this.driverId
+      })
     }
   }
