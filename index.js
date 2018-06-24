@@ -21,9 +21,9 @@ let passengerId = 0
       this.id = ++tripId
       if(driver){
         debugger
-      this.driverId = driver.id
+      this.driver = driver.id
     }
-      this.passengerId = passenger.id
+      this.passenger = passenger.id
 
 
       store.trips.push(this)
