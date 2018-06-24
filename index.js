@@ -22,4 +22,3 @@ let passengerId = 0
       this.passengerId = passenger.id
     }
   }
-}
