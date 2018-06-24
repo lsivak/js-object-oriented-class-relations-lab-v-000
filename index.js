@@ -24,6 +24,18 @@ let passengerId = 0
       this.id = passengerId++
       store.passengers.push(this)
     }
+
+    trips () {
+      return store.trips.filter(trip => {
+        return trip.passenger.Id === this.id
+      })
+    }
+
+    drivers () {
+      return this.trips().map(trip => {
+        return trip.driver()
+      })
+    }
   }
   let tripId = 0
   class Trip {
