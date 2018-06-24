@@ -21,7 +21,9 @@ let passengerId = 0
       this.driverId = driver.id
       this.passengerId = passenger.id
       this.id = tripId++
-
       store.trips.push(this)
+      setDriver(driver) {
+        this.driverId = driver.id
+      }
     }
   }
