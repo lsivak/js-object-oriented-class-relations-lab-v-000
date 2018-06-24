@@ -41,19 +41,13 @@ class Driver {
       })
     }
   }
-  // class Trip {
-  // constructor(driver, passenger) {
-  //   this.driverId = driver.id;
-  //   this.passengerId = passenger.id;
-  //   this.id = tripId++;
-  //   store.trips.push(this);
-  // }
-class Trip {
-  constuctor(driver, passenger) {
-    this.driverId = driver.id;
-    this.passengerId = passenger.id;
-    this.id = tripId++;
-    store.trips.push(this);
+
+  class Trip {
+  constructor(driver, passenger) {
+    this.driverId = driver.id
+    this.passengerId = passenger.id
+    this.id = tripId++
+    store.trips.push(this)
     }
     driver () {
       return store.drivers.find(driver => {
