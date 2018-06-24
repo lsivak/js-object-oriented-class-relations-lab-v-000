@@ -1,7 +1,6 @@
 let store = {drivers: [], passengers []}
 let driverId = 0
 class Driver {
-  debugger
   constructor(name) {
     debugger
     this.name = name
