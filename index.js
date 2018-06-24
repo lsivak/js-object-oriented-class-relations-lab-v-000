@@ -44,6 +44,8 @@ let passengerId = 0
       this.passengerId = passenger.id
       this.id = tripId++
       store.trips.push(this)
-
+    }
+    driver () {
+      return this.trip.driver
     }
   }
