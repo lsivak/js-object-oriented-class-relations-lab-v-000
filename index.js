@@ -38,6 +38,7 @@ let passengerId = 0
     }
   }
   let tripId = 0
+  debugger
   class Trip {
     constuctor(driver, passenger) {
       debugger
