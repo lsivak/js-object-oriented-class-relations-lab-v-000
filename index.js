@@ -18,13 +18,9 @@ let passengerId = 0
   let tripId = 0
   class Trip {
     constuctor(driver, passenger) {
-      this.id = ++tripId
-      if(driver){
-        debugger
       this.driverId = driver.id
-    }
       this.passengerId = passenger.id
-
+      this.id = tripId++
 
       store.trips.push(this)
     }
