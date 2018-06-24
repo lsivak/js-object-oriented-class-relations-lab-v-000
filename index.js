@@ -45,6 +45,7 @@ let passengerId = 0
       this.driverId = driver.id
       this.passengerId = passenger.id
       this.id = tripId++
+      debugger
       store.trips.push(this)
     }
     driver () {
