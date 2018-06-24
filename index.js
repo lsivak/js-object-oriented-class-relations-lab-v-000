@@ -20,6 +20,7 @@ let passengerId = 0
     constuctor(driver, passenger) {
       this.id = ++tripId
       if(driver && passenger){
+        debugger
       this.driverId = driver.id
       this.passengerId = passenger.id
     }
