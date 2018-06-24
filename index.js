@@ -41,16 +41,13 @@ class Driver {
       })
     }
   }
-  debugger
+
   class Trip {
-    constuctor(driver, passenger) {
-      debugger
-      this.driverId = driver.id
-      this.passengerId = passenger.id
-      debugger
-      this.id = tripId++
-      debugger
-      store.trips.push(this)
+    constructor(driver, passenger) {
+      this.driverId = driver.id;
+      this.passengerId = passenger.id;
+      this.id = tripId++;
+      store.trips.push(this);
     }
     driver () {
       return store.drivers.find(driver => {
