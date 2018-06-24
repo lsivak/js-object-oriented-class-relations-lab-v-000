@@ -12,6 +12,7 @@ let passengerId = 0
     constructor(name) {
       this.name = name
       this.id = ++passengerId
+      store.passengers.push(this)
     }
   }
   let tripId = 0
